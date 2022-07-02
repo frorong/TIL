@@ -41,4 +41,31 @@
     ```JS
     h1.classList.toggle("clicked"); //단 한 줄로 해결 가능!!!
     ```
-    
+---
++ input의 value를 받아오려면?
+    + click eventListener를 이용해 click 이벤트가 발생했을 때 받아오기
+        ```JS
+        const nameLog = document.querySelector(".form input"); //html의 form class안의 input
+        const buttonLog = document.querySelector(".form button"); //html의 form class안의 button
+        function clickedButton() //click event시 실행되는 함수
+        {
+            const valueOfLogin = nameLog.value; //input의 value를 받아온다
+            console.log(valueOfLogin); //value 출력
+        }
+        buttonLog.addEventListener("click", clickedButton); //eventListener
+        ```
+    + submit event를 감지하여 받아오기
+        ```js
+        const loginForm = document.querySelector(".form"); //html의 form class
+        function onSubmit() //submit event시 실행되는 함수
+        {
+            const valueOfLogin = nameLog.value; //input의 value를 받아온다
+        }
+        loginForm.addEventListener("submit", onsubmit); //submit 감지
+---
++ string의 길이를 구하려면?
+    + .length를 사용한다\
+        ex
+        ``` JS
+        string.length
+        ```
