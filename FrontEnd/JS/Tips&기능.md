@@ -71,18 +71,17 @@
         ```
 ---
 + 변수를 string 안에 넣는 2가지 방법
-    1. 
+    + 1.
     ``` JS
     "hello " + value;
     ```
-    2. 
+    + 2.
     ``` JS
     `hello ${value}`; //``백틱 기호
     ```
 ---
 + 정보를 저장하려면?
     + localStorage를 사용
-        + 
         ```JS
         localStroage.setItem("key", value); //값을 저장
         ```
