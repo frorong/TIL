@@ -117,3 +117,16 @@
     getClock();
     setInterval(getClock, 1000); //1초마다 getClock을 실행시킨다
     ```
+---
++ code 간소화
+    ```js
+    function sayhello(item)
+    {
+        console.log("this", item);
+    }
+    parsedToDos.forEach(sayhello);
+    // 이것이
+    parsedToDos.forEach((item) => console.log("this", item));
+    // 이렇게
+    ```
+---
