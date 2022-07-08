@@ -130,3 +130,18 @@
     // 이렇게
     ```
 ---
++ 유저의 위치를 알고싶다면??
+    ```js
+    function onGeoSuc(position)
+    {
+        const lat = position.coords.latitude; //위도
+        const lng = position.coords.longitude;  //경도
+        console.log("you live in" + lat + lng); //console에 위도, 경도 출력
+    }
+    function onGeoError()
+    {
+        alert("날씨 정보 없음"); //오류 발생시 경고
+    }
+    navigator.geolocation.getCurrentPosition(onGeoSuc, onGeoError);
+    ```
+---
