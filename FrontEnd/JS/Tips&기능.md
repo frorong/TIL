@@ -145,3 +145,12 @@
     navigator.geolocation.getCurrentPosition(onGeoSuc, onGeoError);
     ```
 ---
++ 우클릭을 방지하려면??
+    ```js
+    function(event)
+    {
+        event.preventDefault();
+    }
+    .addEventListener("contextmenu", function);
+    ```
+---
