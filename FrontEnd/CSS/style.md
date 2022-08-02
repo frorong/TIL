@@ -55,3 +55,12 @@ linear-gradient(?deg, color, color); /*여러개도 가능
     
 }
 ```
++ 스크롤바 디자인
+    + ::-webkit-scrollbar : 스크롤바 전체에 대한 디자인
+    + ::-webkit-scrollbar-thumb : 스크롤바 막대에 대한 디자인
+    + ::-webkit-scrollbar-track : 스크롤바 막대 외부에 대한 디자인
+    + 막대와 전체 사이의 간격을 투명하게
+    ```css
+    background-clip: padding-box;
+    border: npx solid transparent;
+    ```
