@@ -74,3 +74,42 @@ const x = [1,2,3];
 const [a, b, c] = x;
 a == 1, b == 2; c == 3;
 ```
+
+### class, for
+```js
+return(
+    <label for="ID"></label>
+    <input id="ID" class="CLASS"/>
+)
+```
+JSX에서는 위와 같이 사용할 수 없다\
+이미 js에서 선점된 단어이기 때문이다\
+때문에 아래와 같이 사용해야 한다
+```js
+return(
+    <label htmlFor="ID"></label>
+    <input id="ID" className="CLASS"/>
+)
+```
+
+#### disabled
+```js
+return(
+    <input
+        disabled={true};
+    />
+)
+```
+위와 같은 방법으로 사용이 가능하다\
+true, flase값을 가진 변수를 활용할 수 있다
+
+### JS사용
+```js
+return(
+    <p></p>
+    {
+        const a = 0;
+    }
+)
+```
+{중괄호} 안에서는 JS 사용이 가능하다
