@@ -161,3 +161,19 @@ const App = () => {
 ```
 onClick과 같은 이벤트 리스너를 커스텀 component에 넣는다면 그 것은 prop일 뿐이다\
 이벤트 리스너를 넣으려면 상위 div에 넣던가 해야한다
+
+이런 경우는 style도 마찬가지다
+
+### React Memo
+부모가 어떤 state라도 변경이 있으면 자식들은 모두 re render될 것이다\
+component들이 다시 그려질 때 우리가 컨트롤 할 수 있다
+```js
+const MemorizedComponent = React.memo(Conponent1);
+const App = () => {
+    return(
+        <div>
+            <MemorizedComponent onClick={onClick} />
+        </div>
+    )
+}
+```
