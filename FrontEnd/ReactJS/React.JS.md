@@ -148,3 +148,16 @@ return(
     }
     ```
     props는 object이기 때문에 중괄호를 이용하여 text1을 받을 수 있다
+
+### 커스텀 component
+```js
+const App = () => {
+    return(
+        <div>
+            <Component1 onClick={onClick} />
+        </div>
+    )
+}
+```
+onClick과 같은 이벤트 리스너를 커스텀 component에 넣는다면 그 것은 prop일 뿐이다\
+이벤트 리스너를 넣으려면 상위 div에 넣던가 해야한다
