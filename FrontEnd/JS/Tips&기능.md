@@ -154,3 +154,13 @@
     .addEventListener("contextmenu", function);
     ```
 ---
++ value와 array를 합쳐 새로운 array를 만들기
+    ```js
+    const a = [1,2,3,4];
+    const b = [5, a];
+    ```
+    이렇게 더하면 새로운 array에 기존의 array자체를 넣는 것이다  
+    ```js
+    const b = [5, ...a];
+    ```
+    이렇게 하면 a의 element를 돌려준다

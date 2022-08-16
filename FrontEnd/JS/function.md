@@ -342,3 +342,18 @@
     CanvasElement.toDataURL("image/jpeg");
     ```
 ---
+### map
++ 기능 : 하나의 array에 있는 item들을 바꿔준다
++ ex
+    ```js
+    ['array'].map(() => "newItem");
+    ```
+---
+### toUpperCase
++ 기능 : 대문자로 바꿔준다
++ ex
+    ```js
+    const small = 'small';
+    small.toUpperCase();
+    ```
+---
