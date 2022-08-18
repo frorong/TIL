@@ -346,3 +346,10 @@ function Component () {
 ```
 Component가 rendering될 때 "hi"가 찍히고 destory될 때 "bye"가 찍힌다\
 화살표 함수는 간편하다
+
+## 라우터   
+#### 페이지를 전환
+### 설치
+```cmd
+npm install react-router-dom
+```
