@@ -353,3 +353,24 @@ Component가 rendering될 때 "hi"가 찍히고 destory될 때 "bye"가 찍힌�
 ```cmd
 npm install react-router-dom
 ```
+### react-router-dom
++ Hash Router
++ Browser Router
+    
+홈으로 가기
+```js
+function App() {
+    return <Router>
+        <Switch>
+            <Route path="/">
+                <Home/>
+            </Route>
+        </Switch>
+    </Router>
+}
+```
+유저가 / 이 경로에 있으면 홈 화면을 렌더링 해준다
+
+import { Link } from "react-router-dom";
+
+Link를 import해서 페이지를 전환시킬 수 있다
