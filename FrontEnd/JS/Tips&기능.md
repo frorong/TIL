@@ -164,3 +164,11 @@
     const b = [5, ...a];
     ```
     이렇게 하면 a의 element를 돌려준다
+---
++ 모든 item event 연결
+    ```js
+    const List = document.querySelectorAll(".list");
+    for(let el of List){
+        el.addEventListner("event", function)
+    } // 사실 리액트 쓰면 상관 없..
+    ```

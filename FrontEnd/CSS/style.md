@@ -64,3 +64,5 @@ linear-gradient(?deg, color, color); /*여러개도 가능
     background-clip: padding-box;
     border: npx solid transparent;
     ```
+---
+vh, vw
