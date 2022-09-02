@@ -71,7 +71,7 @@
 + [버블정렬](./%EA%B0%9C%EB%85%90.md/%EB%B2%84%EB%B8%94%EC%A0%95%EB%A0%AC.md)  
 
 ## 실습
-+ ~ 2022-07-11 [PaintJS](https://github.com/computersyestem/PaintJS)
-+ 2022-07-13 ~ 14 [YonexKorea](https://github.com/computersyestem/Yonex_Korea)
-+ 2022-07-19 ~ 08-01 [SelfDiagnosis](https://github.com/computersyestem/SelfDiagnosis)
-+ 2022-08-02 ~ 08-04 [Youtube](https://github.com/computersyestem/Youtube)
++ ~ 2022-07-11 [PaintJS](https://github.com/Lee-Seungje/PaintJS)
++ 2022-07-13 ~ 14 [YonexKorea](https://github.com/Lee-Seungje/Yonex_Korea)
++ 2022-07-19 ~ 08-01 [SelfDiagnosis](https://github.com/Lee-Seungje/SelfDiagnosis)
++ 2022-08-02 ~ 08-04 [Youtube](https://github.com/Lee-Seungje/Youtube)
