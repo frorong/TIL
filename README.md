@@ -75,3 +75,4 @@
 + 2022-07-13 ~ 14 [YonexKorea](https://github.com/Lee-Seungje/Yonex_Korea)
 + 2022-07-19 ~ 08-01 [SelfDiagnosis](https://github.com/Lee-Seungje/SelfDiagnosis)
 + 2022-08-02 ~ 08-04 [Youtube](https://github.com/Lee-Seungje/Youtube)
++ 2022-08-29 ~ 09-01 [PPT](https://github.com/Lee-Seungje/Gsap-Practice)
