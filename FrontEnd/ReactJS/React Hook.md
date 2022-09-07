@@ -67,3 +67,22 @@ useEffect(() => {
 }, [value, VALUE]);
 ```
 위와 같은 경우처럼 두 가지를 동시에 지켜볼 수도 있다
+
+### Use Title
+
++ 제목을 업데이트 시켜준다
++ ```js
+    const useTitle = (initialTitle) => {
+    const [title, setTitle] = useState(initialTitle);
+    const updateTitle = () => {
+        const htmlTitle = document.querySelector("title");
+        htmlTitle.innerText = title;
+    }
+    useEffect(updateTitle,[title])
+    return setTitle;
+    }
+
+    const App = () => {
+    const titleUpdate = useTitle("Loading...");
+    };
+    ```
