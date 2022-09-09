@@ -117,3 +117,64 @@ const App = () => {
   );
 };
 ```
+
+### Use Confirm
+```js
+const useConfirm = (message = "", onConfirm, onCencel) => {
+  if (!onConfirm || typeof onConfirm !== "function") {
+    return;
+  }
+  if (onCencel && typeof onConfirm !== "function") {
+    return;
+  }
+  const confirmAction = () => {
+    if (window.confirm(message)) {
+      onConfirm();
+    } else {
+      onCencel();
+    }
+    return confirmAction;
+  };
+};
+
+const App = () => {
+  const deleteWorld = () => {
+    console.log("Deleting the world ...");
+  };
+  const abort = () => {
+    console.log("Aborted");
+  };
+  const confirmDelete = useConfirm("Are you sure", deleteWorld, abort);
+  return (
+    <div className="App">
+      <button onClick={confirmDelete}>Delete the world</button>
+    </div>
+  );
+};
+```
+
+### Use PreventLeave
++ 유저가 나갈 때 메세지를 남긴다   
+굉장히 좋은듯
+```js
+const usePreventLeave = () => {
+  const listener = (event) => {
+    event.preventDefault();
+    event.returnValue = "";
+  };
+  const enablePrevent = () => window.addEventListener("beforeunload", listener);
+  const disablePrevent = () =>
+    window.removeEventListener("beforeunload", listener);
+  return { enablePrevent, disablePrevent };
+};
+
+const App = () => {
+  const { enablePrevent, disablePrevent } = usePreventLeave();
+  return (
+    <div className="App">
+      <button onClick={enablePrevent}>Protect</button>
+      <button onClick={disablePrevent}>UnProtect</button>
+    </div>
+  );
+};
+```
