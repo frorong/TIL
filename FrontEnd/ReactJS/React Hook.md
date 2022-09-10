@@ -178,3 +178,36 @@ const App = () => {
   );
 };
 ```
+
+
+### Use Before Leave
++ 유저의 마우스 포인터가 화면 밖으로 나가면 이벤트가 실행된다
+```js
+const useBeforeLeave = (onBefore) => {
+  if (typeof onBefore !== "function") {
+    return;
+  }
+  const handle = (event) => {
+    const { clientY } = event;
+    if (clientY <= 0) {
+      onBefore();
+    }
+  };
+  useEffect(() => {
+    document.addEventListener("mouseleave", handle);
+    return () => {
+      document.removeEventListener("mouseleave", handle);
+    };
+  }, []);
+};
+
+const App = () => {
+  const begForLife = () => {};
+  useBeforeLeave(begForLife);
+  return (
+    <div className="App">
+      <h1>Hello</h1>
+    </div>
+  );
+};
+```
