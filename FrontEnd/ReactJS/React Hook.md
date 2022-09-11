@@ -91,6 +91,7 @@ useEffect(() => {
 + component의 특정 부분을 선택할 수 있는 방법
 
 ### Use Click
+유저의 클릭을 확인한다
 ```js
 const useClick = (onClick) => {
   const element = useRef();
@@ -155,7 +156,7 @@ const App = () => {
 
 ### Use PreventLeave
 + 유저가 나갈 때 메세지를 남긴다   
-굉장히 좋은듯
+굉장히 좋은듯  
 ```js
 const usePreventLeave = () => {
   const listener = (event) => {
