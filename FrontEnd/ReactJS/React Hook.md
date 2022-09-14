@@ -212,3 +212,68 @@ const App = () => {
   );
 };
 ```
+
+### Use FadeIn
+요소가 천천히 나타나게 한다
+```js
+const useFadeIn = (duration=1, delay =0) => {
+  if(typeof duration != "number" || typeof delay != "number"){
+    return;
+  }
+  const element = useRef();
+  useEffect(() => {
+    if(element.current){
+      const { current} = element;
+      current.style.transition = `opacity ${duration}s ease-in-out ${delay}s`
+      current.style.opacity = 1;
+    }
+  },[])
+  return {ref : element, style : {opacity:0}};
+}
+
+const App = () => {
+  const fadeInH1 = useFadeIn(2,2);
+  const fadeInP = useFadeIn(5,1);
+  return (
+    <div className="App">
+      <h1 {...fadeInH1}>Hello</h1>
+      <p {...fadeInP}>블라블라</p>
+    </div>
+  );
+};
+```
+
+### Use Network
+유저의 넽워크 연결 상태를 알려준다
+```js
+const useNetwork = (onChange) => {
+  const [status, setStatus] = useState(navigator.onLine);
+  const handleCahnge = () => {
+    if (typeof onChange === "function") {
+      onChange(navigator.onLine);
+    }
+    setStatus(navigator.onLine);
+  };
+  useEffect(() => {
+    window.addEventListener("online", handleCahnge);
+    window.addEventListener("offline", handleCahnge);
+    () => {
+      window.removeEventListener("online", handleCahnge);
+      window.removeEventListener("offline", handleCahnge);
+    };
+  }, []);
+  return status;
+};
+
+const App = () => {
+  const handleNetworkChange = (online) => {
+    console.log(online ? "we just went online" : "we are offline");
+  };
+  const onLine = useNetwork();
+  return (
+    <div className="App">
+      <h1>{onLine ? "OnLine" : "OffLine"}</h1>
+    </div>
+  );
+};
+```
