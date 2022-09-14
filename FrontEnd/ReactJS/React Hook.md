@@ -277,3 +277,78 @@ const App = () => {
   );
 };
 ```
+
+### Use Scroll
+유저의 스크롤을 감지해서 이벤트를 준다
+```js
+const useScroll = () => {
+  const [state, setState] = useState({x:0,y:0});
+  const onscroll = () => {
+    setState({ y : window.scrollY, x : window.scrollX });
+  }
+  useEffect(() => {
+    window.addEventListener("scroll", onscroll);
+    return () => window.removeEventListener("scroll", onscroll);  
+  },[])
+  return state;
+}
+
+const App = () => {
+  const {y} = useScroll();
+  return (
+    <div className="App" style={{height: "1000vh" }}>
+      <h1 style={{position:"fixed", color:y > 100 ? "red" : "blue" }}>Hello</h1>
+    </div>
+  );
+};
+```
+
+### Use FullScreen
+겁나 어렵다
+```js
+const useFullScreen = () => {
+  const element = useRef();
+  const runCb = (isFull) => {
+    if (callback && typeof callback === "function") {
+      callback(isFull);
+    }
+  };
+  const triggerFull = () => {
+    if (element.current) {
+      if (element.current.requestFullscreen) {
+        element.current.requestFullscreen();
+      } else if (element.current.mozRequestFullScreen) {
+        element.current.mozRequestFullScreen();
+      } else if (element.current.webkitRequestFullscreen) {
+        element.current.webkitRequestFullscreen();
+      } else if (element.current.msRequestFullscreen) {
+        element.current.msRequestFullscreen();
+      }
+      runCb(true);
+    }
+  };
+  const exitFull = () => {
+    document.exitFullscreen();
+    if (callback && typeof callback === "function") {
+      callback(false);
+    }
+  };
+  return { element, triggerFull, exitFull };
+};
+
+const App = () => {
+  const callback = (isFull) => {
+    console.log(isFull ? "We are full" : "We are Empty");
+  };
+  const { element, triggerFull, exitFull } = useFullScreen();
+  return (
+    <div className="App">
+      <div ref={element}>
+        <img src="http://www.yonexmall.com/shop/data/skin/standard_C/img/banner/logo.jpg" />
+        <button onClick={exitFull}>Make small Screnn</button>
+      </div>
+      <button onClick={triggerFull}>Make Full Screnn</button>
+    </div>
+  );
+};
+```
