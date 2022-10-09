@@ -47,8 +47,9 @@
 + [Ending](./C/%EC%97%94%EB%94%A9%20%ED%81%AC%EB%A0%88%EB%94%A7%20%EA%B5%AC%ED%98%84.md)
 + [Music](./C/C%EC%96%B8%EC%96%B4%20%EC%9D%8C%EC%95%85%20%EB%84%A3%EA%B8%B0.md)
 
-## 코딩용어
-+ [용어](./%EC%BD%94%EB%94%A9%EC%9A%A9%EC%96%B4/%EC%BD%94%EB%94%A9%EC%9A%A9%EC%96%B4.md)
+## Programing Term
++ [programing term](./programing_turm/programing_Term.md)
++ [payload](./programing_turm/payload.md)
 
 ## 단축키
 + [단축키](./%EB%8B%A8%EC%B6%95%ED%82%A4/%EB%8B%A8%EC%B6%95%ED%82%A4.md)
@@ -58,17 +59,17 @@
 + [절차](./%EA%B5%AC%EC%A1%B0%EC%A0%81%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/%EC%96%B8%EC%96%B4%20%EA%B0%9C%EB%B0%9C%20%EC%A0%88%EC%B0%A8.md)
 
 ## 게임개발(Unity+ C#)
-+ [메인](./%EA%B2%8C%EC%9E%84%EA%B0%9C%EB%B0%9C/%ED%95%98%EB%8A%98%EC%9D%84%20%EB%82%98%EB%8A%94%20BaseMan/)
-+ [코드설명](./%EA%B2%8C%EC%9E%84%EA%B0%9C%EB%B0%9C/%ED%95%98%EB%8A%98%EC%9D%84%20%EB%82%98%EB%8A%94%20BaseMan/C%23code%EC%84%A4%EB%AA%85.md)
-+ [실행](./%EA%B2%8C%EC%9E%84%EA%B0%9C%EB%B0%9C/%ED%95%98%EB%8A%98%EC%9D%84%20%EB%82%98%EB%8A%94%20BaseMan/%EC%8B%A4%ED%96%89%EC%9E%A5%EB%A9%B4.md)
++ [메인](./gameDevelop/%ED%95%98%EB%8A%98%EC%9D%84%20%EB%82%98%EB%8A%94%20BaseMan/README.md)
++ [코드설명](./gameDevelop/%ED%95%98%EB%8A%98%EC%9D%84%20%EB%82%98%EB%8A%94%20BaseMan/C%23code%EC%84%A4%EB%AA%85.md)
++ [실행](./gameDevelop/%ED%95%98%EB%8A%98%EC%9D%84%20%EB%82%98%EB%8A%94%20BaseMan/%EC%8B%A4%ED%96%89%EC%9E%A5%EB%A9%B4.md)
 
 ## 객체지향
-+ [설계원칙](./%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5/%EC%84%A4%EA%B3%84%EC%9B%90%EC%B9%99.md)
-+ [속성](./%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5/%EC%86%8D%EC%84%B1.md)
-+ [오버로딩](./%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5/%EC%98%A4%EB%B2%84%EB%A1%9C%EB%94%A9.md)
++ [설계원칙](./object_oriented/principles.md)
++ [속성](./object_oriented/property.md)
++ [오버로딩](./object_oriented/overloading.md)
 
 ## 기타
-+ [버블정렬](./%EA%B0%9C%EB%85%90.md/%EB%B2%84%EB%B8%94%EC%A0%95%EB%A0%AC.md)  
++ [버블정렬](./Concept.md/bubble_sort.md)  
 
 ## 실습
 + ~ 2022-07-11 [PaintJS](https://github.com/Lee-Seungje/PaintJS)
