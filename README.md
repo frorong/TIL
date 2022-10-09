@@ -52,7 +52,7 @@
 + [payload](./programing_turm/payload.md)
 
 ## 단축키
-+ [단축키](./%EB%8B%A8%EC%B6%95%ED%82%A4/%EB%8B%A8%EC%B6%95%ED%82%A4.md)
++ [단축키](./Key/Key.md)
 
 ## 구조적 프로그래밍
 + [설계구조](./%EA%B5%AC%EC%A1%B0%EC%A0%81%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/%EC%84%A4%EA%B3%84%EA%B5%AC%EC%A1%B0.md)
