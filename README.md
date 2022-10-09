@@ -4,9 +4,9 @@
 2022-07-04
 ```
 ## Git
-+ [개념](./git/%EA%B0%9C%EB%85%90.md)
-+ [명령어](./git/%EB%AA%85%EB%A0%B9%EC%96%B4.md)
-+ [오류, 해결](./git/%EC%98%A4%EB%A5%98.md)
++ [개념](./git/concept.md)
++ [명령어](./git/command.md)
++ [오류, 해결](./git/issue.md)
 + [PullRequest](./git/PR.md)
 + [git-flow](./git/git-flow.md)
 

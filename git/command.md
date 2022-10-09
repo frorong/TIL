@@ -1,5 +1,5 @@
 ## git
-### 명령어
+### command
 + init 
     + git init : 새로운 git 저장소를 생성한다
 + file
