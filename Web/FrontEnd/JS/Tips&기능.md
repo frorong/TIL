@@ -172,3 +172,8 @@
         el.addEventListner("event", function)
     } // 사실 리액트 쓰면 상관 없..
     ```
+
++ innerText 말고 텍스트 변경 방법
+    ```js
+    element.textContent = "blabla"
+    ```
