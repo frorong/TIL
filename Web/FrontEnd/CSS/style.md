@@ -66,3 +66,8 @@ linear-gradient(?deg, color, color); /*여러개도 가능
     ```
 ---
 vh, vw
+
++ html 엘리먼트의 텍스트 수정하기
+```css
+content: '변경후 텍스트';
+```
