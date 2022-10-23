@@ -10,3 +10,7 @@
 + 클래스는 protected와 private로 지정 불가
 + 오버라이딩할 때 부모 클래스의 메서드보더 좁은 접근 지정 불가
     + ex) 부모가 protected인데 자식이 private 불가
+
+### final
++ final class : 더이상 상속이 불가능한 종단 클래스이다
++ final method : 더이상 오버라이딩 불가한 종단 메서드이다
