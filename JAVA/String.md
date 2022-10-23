@@ -38,7 +38,7 @@ s1 = s3;
 + boolean isEmpty() : 길이가 0이면 true를 반환
 + int length() : 길이를 반환
 + String repeat(int c) : c번 반복한 문자열을 반환
-+ boolean startsWith() : 시작하는 문자열이 s인지 조사
++ boolean startsWith(String s) : 시작하는 문자열이 s인지 조사
 + String substring(int index) : index부터 시작하는 문자열의 일부를 반환
 + String toLowerCase() : 모두 소문자로 변환
 + String toUpperCase() : 모두 대문자로 변환
