@@ -34,7 +34,7 @@ s1 = s3;
 + boolean contains(String s) : 문자열 s를 포함하는지 조사
 + boolean endsWith(String s) : 끝나는 문자열이 s인지 조사
 + int indexOf(String s) : 문자열 s가 나타난 위치를 반환
-+ boolean isBlank() : 길이가 0 혹은 공박 앴으면 true반환
++ boolean isBlank() : 길이가 0 혹은 공박 있으면 true반환
 + boolean isEmpty() : 길이가 0이면 true를 반환
 + int length() : 길이를 반환
 + String repeat(int c) : c번 반복한 문자열을 반환
