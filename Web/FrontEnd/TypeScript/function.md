@@ -29,3 +29,18 @@ function add(...nums: number[]) {
     return nums.reduce((result, num) => result + num, 0); // initialValue의 값은 0이다
 }
 ```
+
+-   bind 사용
+
+```ts
+interface User {
+    name: string;
+}
+const Sam: User = { name: 'Sam' };
+function showName(this: USer) {
+    console.log(this.name);
+}
+const a = showName.bind(Sam);
+```
+
+-   동일한 함수지만 매개변수에 따라 다른 값을 반환할시 오버로드를 사용하여 지정 가능
