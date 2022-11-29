@@ -48,3 +48,23 @@ function Button({ text }) {
 ```
 
 create-react-app이 css코드를 js 오브젝트로 변환시켜준다
+
+## Styled Component
+
+-   설치
+
+```
+ npm i styled-components
+```
+
+-   import
+
+```
+import styled from "styled-components";
+```
+
+-   인자로 컴포넌트를 넘길 수 있다
+-   export와 inport를 사용한다
+-   컴포넌트별로 폴더를 만들어 관리하며 style파일은 위에 styled-component를 import 해야한다
+-   style파일에서는 백틱을 사용하여 css 문법을 적용할 수 있다
+-   작성한 변수는 export하여 jsx파일에서 사용 가능하다
