@@ -2,11 +2,11 @@
 
 -   차수가 2개 또는 3개가 될 수 있다
     -   ```
-                      [Root]
+                     [Root][]
                          |
-                 [node1] + [node2]
-                              |
-                       [node3]+[node4]
+               [node1][] + [node2][]
+                   |           |
+               [node3][]     [node4][node5]
         ```
 
 *   모든 Leaf Node가 같은 레벨에 있어야한다
