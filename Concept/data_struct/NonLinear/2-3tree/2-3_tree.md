@@ -6,7 +6,7 @@
                          |
                  [node1] + [node2]
                               |
-                   [node3]+[node4]+[node5]
+                       [node3]+[node4]
         ```
 
 *   모든 Leaf Node가 같은 레벨에 있어야한다
