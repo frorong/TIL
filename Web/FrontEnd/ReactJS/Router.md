@@ -107,3 +107,8 @@ const Component = () => {
 
 export default Component;
 ```
+
+## history
+
+-   history로 페이지가 이동된 path를 볼 수 있다  
+    history는 prop으로 받고 이걸 이용해서 페이지를 이동할 수 있다
