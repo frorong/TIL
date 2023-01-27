@@ -12,10 +12,18 @@ socket.send('hello!!');
 
 ```js
 const socket = new WebSocket(`ws://${window.location.host}`); // 프론트에서 해줘야하는 연결
-socket.addEventListener('open');
+socket.addEventListener('open', () => {
+    console.log('hello');
+});
 ```
 
-서버에선ㄴ 아래와 같다
+서버에서는 아래와 같다
+
+```js
+socket.on('message', (message) =>
+    console.log('Message from Browser', String(message))
+);
+```
 
 쓸 수 있는 이벤트
 
@@ -23,3 +31,7 @@ socket.addEventListener('open');
 -   message : 서버가 메세지 전송시 발생
 -   error : 에러 발생시 발생
 -   close : 서버와 연결이 끊길시 발생
+
+```
+
+```
