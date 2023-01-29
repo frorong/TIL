@@ -41,6 +41,7 @@ socket.on('event', (msg) => {});
 ```
 
 socketIO의 emit의 1번째 argument는 event 이름이 들어가고  
-2번째 argument로 payload를 보내는데 object도 전송이 가능하다
-3번째 argument로 서버에서 호출하는 function이 들어간다  
-서버는 백엔드에서 function을 호출하지만 function은 프론트에서 실행된다!!
+2번째 argument로 payload를 보내는데 object도 전송이 가능하다  
+마지막 argument로 서버에서 호출하는 function이 들어간다  
+서버는 백엔드에서 function을 호출하지만 function은 프론트에서 실행된다!!  
+백엔드에서 실행시키면 보안 문제가 발생할 수 있기 때문이다
