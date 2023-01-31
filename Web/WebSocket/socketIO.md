@@ -67,7 +67,7 @@ socket.leave(roomName);
 방을 나간다
 
 ```js
-socket.to(room);
+socket.to(room).emit('message');
 ```
 
 방 전체에 메세지를 보낸다
