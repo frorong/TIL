@@ -10,18 +10,18 @@ React 컴포넌트를 스타일링할 수 있는 라이브러리
 
 ```js
 /** @jsxImportSource @emotion/react */
-import { css } from '@emotion/react';
+import { css } from "@emotion/react";
 
 function Component1() {
-    return (
-        <div
-            css={css({
-                backgroundColor: 'red',
-            })}
-        >
-            red area
-        </div>
-    );
+  return (
+    <div
+      css={css({
+        backgroundColor: "red",
+      })}
+    >
+      red area
+    </div>
+  );
 }
 ```
 
@@ -40,24 +40,24 @@ function Component1() {
 
 ```js
 /** @jsxImportSource @emotion/react */
-import { css } from '@emotion/react';
+import { css } from "@emotion/react";
 
 function Component1({ argument }) {
-    return (
-        <div
-            css={css({
-                borderRadius: '6px',
-                border: '1px solid rgba(27, 31, 36, 0.15)',
-                backgroundColor: 'rgb(246, 248, 250)',
-                color: 'rgb(36, 41, 47)',
-                fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif',
-                fontWeight: '600',
-                lineHeight: '20px',
-            })}
-        >
-            {argument}
-        </div>
-    );
+  return (
+    <div
+      css={css({
+        borderRadius: "6px",
+        border: "1px solid rgba(27, 31, 36, 0.15)",
+        backgroundColor: "rgb(246, 248, 250)",
+        color: "rgb(36, 41, 47)",
+        fontFamily: "-apple-system, BlinkMacSystemFont, sans-serif",
+        fontWeight: "600",
+        lineHeight: "20px",
+      })}
+    >
+      {argument}
+    </div>
+  );
 }
 
 export default Component1;
@@ -69,19 +69,19 @@ export default Component1;
 /** @jsxImportSource @emotion/react */
 
 const colors = {
-    default: 'rgb(36, 41, 47)',
-    danger: 'rgb(207, 34, 46)',
-    outline: 'rgb(9, 105, 218)',
+  default: "rgb(36, 41, 47)",
+  danger: "rgb(207, 34, 46)",
+  outline: "rgb(9, 105, 218)",
 };
 
-function Button({ variant = 'default' }) {
-    return (
-        <button
-            css={{
-                color: colors[variant],
-            }}
-        ></button>
-    );
+function Button({ variant = "default" }) {
+  return (
+    <button
+      css={{
+        color: colors[variant],
+      }}
+    ></button>
+  );
 }
 
 export default Button;
@@ -130,4 +130,12 @@ export default Button;
 <Button size="lg" variant="outline">
     Outline
 </Button>
+```
+
+## ts.config
+
+```ts
+    "skipLibCheck": true, // 오류 검출이 줄어든다 -> 빨라진다
+    "jsxImportSource": "@emotion/react",
+     // /** @jsxImportSource @emotion/react */ 를 생략할 수 있다
 ```
